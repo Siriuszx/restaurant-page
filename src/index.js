@@ -1,18 +1,32 @@
-const contentContainer = document.createElement('div');
-contentContainer.classList.add('content');
+import './style.css';
+import gitHubIcon from './github.svg';
+import MainBgImg from './sergio-alves-santos-PeDrafNlY2Y-unsplash.jpg';
 
-const defaultImg = document.createElement('img');
-defaultImg.setAttribute('alt', 'Image');
+const footer = document.querySelector('footer');
 
-const heading = document.createElement('h1');
-heading.textContent = 'This is my Restaurant';
+const authorContainer = document.createElement('div');
+authorContainer.classList.add('author-container');
 
-const desc = document.createElement('p');
-desc.textContent = 'Lorem ipsum dolor sit amet consectetur adipisicing elit.' +
-    ' Eveniet hic quisquam neque' +
-    'deleniti rem eum quo autem dolore exercitationem asperiores.';
+const logoLink = document.createElement('a');
+logoLink.href = 'https://github.com/siriuszx';
 
-document.body.appendChild(contentContainer);
-contentContainer.appendChild(defaultImg);
-contentContainer.appendChild(heading);
-contentContainer.appendChild(desc);
+const gitHubLogo = new Image();
+gitHubLogo.classList.add('github-logo');
+gitHubLogo.src = gitHubIcon;
+gitHubLogo.alt = 'GitHub Logo';
+
+const aliasFooter = document.createElement('span');
+aliasFooter.textContent = 'Siriuszx';
+
+logoLink.appendChild(gitHubLogo);
+authorContainer.appendChild(logoLink);
+authorContainer.appendChild(aliasFooter);
+
+footer.appendChild(authorContainer);
+
+
+
+
+
+
+

@@ -21,6 +21,8 @@
   "homepage": "https://github.com/Siriuszx/restaurant-page#readme",
   "devDependencies": {
     "css-loader": "^6.8.1",
+    "handlebars-loader": "^1.7.3",
+    "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.3",
     "style-loader": "^3.3.3",
     "webpack": "^5.88.2",

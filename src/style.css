@@ -1,0 +1,105 @@
+:root {
+    --bg-clr: #fff;
+    --secondary-clr: #ec6d2e;
+    --main-clr: #f3f0ed;
+    --txt-clr: #54565a;
+}
+
+* {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--txt-clr);
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+header {
+    padding: 1em 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.header-nav {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 3fr 1fr;
+}
+
+.header-nav ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.header-nav li {
+    margin: 0 2em;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.nav-link {
+    color: var(--txt-clr);
+    text-decoration: none;
+}
+
+button {
+    max-height: 50px;
+    padding: 1em;
+    color: var(--main-clr);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    aspect-ratio: 7/2;
+    border: none;
+    border-radius: 0.5em;
+    background-color: var(--secondary-clr);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+main {
+    background: url('sergio-alves-santos-PeDrafNlY2Y-unsplash.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+footer {
+    color: var(--main-clr);
+    font-weight: 600;
+    padding: 0.2em 3em;
+    background-color: var(--secondary-clr);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.author-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.github-logo {
+    height: 40px;
+    filter: invert(95%) sepia(8%) saturate(462%) hue-rotate(315deg) brightness(105%) contrast(90%);
+}
+
