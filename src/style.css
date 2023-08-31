@@ -103,3 +103,22 @@ footer {
     filter: invert(95%) sepia(8%) saturate(462%) hue-rotate(315deg) brightness(105%) contrast(90%);
 }
 
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-container {
+    width: 100%;
+    height: 200px;
+    color: var(--main-clr);
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+}
