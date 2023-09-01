@@ -54,8 +54,13 @@ header {
 }
 
 .nav-link {
+    user-select: none;
     color: var(--txt-clr);
     text-decoration: none;
+}
+
+.nav-link:hover {
+    cursor: pointer;
 }
 
 button {
@@ -131,7 +136,7 @@ main {
     backdrop-filter: blur(5px);
 }
 
-.menu-container {
+.content-container {
     width: 100%;
     padding: 1em;
     display: flex;
@@ -141,7 +146,7 @@ main {
     backdrop-filter: blur(5px);
 }
 
-.menu-header {
+.container-header {
     margin: 1em;
     color: var(--main-clr);
     font-size: 2.5rem;
@@ -149,23 +154,28 @@ main {
     text-transform: uppercase;
 }
 
-.menu-card-container {
+.container-card-container {
     display: grid;
     grid-template-columns: repeat(1, 400px);
     grid-template-rows: repeat(4, auto);
     gap: 1rem;
 }
 
-.menu-card {
+.container-card {
     padding: 1em;
     background-color: var(--bg-clr);
     border-radius: 0.5rem;
 }
 
 .card-img {
-    /* aspect-ratio: 1/1; */
     height: 150px;
     width: 150px;
     object-fit: cover;
     border-radius: 4px;
+}
+
+.user-img {
+    height: 64px;
+    width: 64px;
+    object-fit: cover;
 }

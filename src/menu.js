@@ -1,23 +1,23 @@
 import iceTea from './elissa-landry-SpPvkIgYgKI-unsplash.jpg';
 
-const loadMenuContents = function () {
+const loadMenuPage = function () {
 
     const content = document.querySelector('.content');
     content.innerHTML = '';
 
     const menu = document.createElement('div');
-    menu.classList.add('menu-container');
+    menu.classList.add('content-container');
 
     const menuHeader = document.createElement('h2');
-    menuHeader.classList.add('menu-header');
+    menuHeader.classList.add('container-header');
     menuHeader.textContent = 'Our Menu';
 
     const menuCardContainer = document.createElement('div');
-    menuCardContainer.classList.add('menu-card-container');
+    menuCardContainer.classList.add('container-card-container');
 
     // Menu cards section
     const menuCard1 = document.createElement('div');
-    menuCard1.classList.add('menu-card');
+    menuCard1.classList.add('container-card');
 
     const menuCard1Header = document.createElement('h3');
     menuCard1Header.textContent = 'Long Island Ice Tea';
@@ -36,7 +36,7 @@ const loadMenuContents = function () {
 
 
     const menuCard2 = document.createElement('div');
-    menuCard2.classList.add('menu-card');
+    menuCard2.classList.add('container-card');
 
     const menuCard2Header = document.createElement('h3');
     menuCard2Header.textContent = 'Long Island Ice Tea';
@@ -55,7 +55,7 @@ const loadMenuContents = function () {
 
 
     const menuCard3 = document.createElement('div');
-    menuCard3.classList.add('menu-card');
+    menuCard3.classList.add('container-card');
 
     const menuCard3Image = new Image();
     menuCard3Image.src = iceTea;
@@ -74,7 +74,7 @@ const loadMenuContents = function () {
 
 
     const menuCard4 = document.createElement('div');
-    menuCard4.classList.add('menu-card');
+    menuCard4.classList.add('container-card');
 
     const menuCard4Image = new Image();
     menuCard4Image.src = iceTea;
@@ -91,7 +91,7 @@ const loadMenuContents = function () {
     menuCard4.appendChild(menuCard4Header);
     menuCard4.appendChild(menuCard4Desc);
 
-
+    // Content container section
     menuCardContainer.appendChild(menuCard1);
     menuCardContainer.appendChild(menuCard2);
     menuCardContainer.appendChild(menuCard3);
@@ -102,4 +102,4 @@ const loadMenuContents = function () {
     content.appendChild(menu);
 }
 
-export default loadMenuContents;
+export default loadMenuPage;
