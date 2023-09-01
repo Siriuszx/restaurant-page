@@ -1,4 +1,4 @@
-const loadHomeContents = function () {
+const loadHomePage = function () {
 
     // Wipes 'content' box to reload contents
     const content = document.querySelector('.content');
@@ -12,4 +12,4 @@ const loadHomeContents = function () {
     content.appendChild(heroContainer);
 }
 
-export default loadHomeContents;
+export default loadHomePage;

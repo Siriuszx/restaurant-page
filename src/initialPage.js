@@ -1,7 +1,8 @@
 import gitHubIcon from './github.svg';
 import MainBgImg from './sergio-alves-santos-PeDrafNlY2Y-unsplash.jpg';
-import loadHomeContents from './home.js';
-import loadMenuContents from './menu';
+import loadHomePage from './home.js';
+import loadMenuPage from './menu';
+import loadContactPage from './contact';
 
 const loadInitialPage = function () {
 
@@ -28,16 +29,19 @@ const loadInitialPage = function () {
 
     const navLi1 = document.createElement('li');
     const navLink1 = document.createElement('a');
+    navLink1.classList.add('home-link');
     navLink1.classList.add('nav-link');
     navLink1.textContent = 'Home';
 
     const navLi2 = document.createElement('li');
     const navLink2 = document.createElement('a');
+    navLink2.classList.add('menu-link');
     navLink2.classList.add('nav-link');
     navLink2.textContent = 'Menu';
 
     const navLi3 = document.createElement('li');
     const navLink3 = document.createElement('a');
+    navLink3.classList.add('contact-link');
     navLink3.classList.add('nav-link');
     navLink3.textContent = 'Contact';
 
@@ -66,8 +70,7 @@ const loadInitialPage = function () {
     content
 
     main.appendChild(content);
-    // loadHomeContents();
-    loadMenuContents();
+    loadHomePage();
 
     // Footer
 
