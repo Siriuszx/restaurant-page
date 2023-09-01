@@ -15,7 +15,7 @@ const loadMenuPage = function () {
     const menuCardContainer = document.createElement('div');
     menuCardContainer.classList.add('container-card-container');
 
-    // Menu cards section
+    // Content cards
     const menuCard1 = document.createElement('div');
     menuCard1.classList.add('container-card');
 
@@ -91,7 +91,7 @@ const loadMenuPage = function () {
     menuCard4.appendChild(menuCard4Header);
     menuCard4.appendChild(menuCard4Desc);
 
-    // Content container section
+    
     menuCardContainer.appendChild(menuCard1);
     menuCardContainer.appendChild(menuCard2);
     menuCardContainer.appendChild(menuCard3);

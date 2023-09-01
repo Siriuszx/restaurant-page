@@ -1,20 +1,15 @@
 import gitHubIcon from './github.svg';
-import MainBgImg from './sergio-alves-santos-PeDrafNlY2Y-unsplash.jpg';
 import loadHomePage from './home.js';
-import loadMenuPage from './menu';
-import loadContactPage from './contact';
 
 const loadInitialPage = function () {
-
-    const body = document.querySelector('body');
 
     const header = document.createElement('header');
     const main = document.createElement('main');
     const footer = document.createElement('footer');
 
-    body.appendChild(header);
-    body.appendChild(main);
-    body.appendChild(footer);
+    document.body.appendChild(header);
+    document.body.appendChild(main);
+    document.body.appendChild(footer);
 
     // Header
 
@@ -67,9 +62,9 @@ const loadInitialPage = function () {
 
     const content = document.createElement('div');
     content.classList.add('content');
-    content
 
     main.appendChild(content);
+    
     loadHomePage();
 
     // Footer
@@ -94,7 +89,5 @@ const loadInitialPage = function () {
 
     footer.appendChild(authorContainer);
 }
-
-
 
 export default loadInitialPage;

@@ -1,6 +1,7 @@
 import userIcon from './user.png';
 
 const loadContactPage = function () {
+    
     const content = document.querySelector('.content');
     content.innerHTML = '';
 
@@ -14,7 +15,7 @@ const loadContactPage = function () {
     const contactCardContainer = document.createElement('div');
     contactCardContainer.classList.add('container-card-container');
 
-    // Card
+    // Content cards
     const contactCard1 = document.createElement('div');
     contactCard1.classList.add('container-card');
 
@@ -32,6 +33,7 @@ const loadContactPage = function () {
     contactCard1.appendChild(contactCard1Image);
     contactCard1.appendChild(contactCard1Header);
     contactCard1.appendChild(contactCard1Desc);
+
 
     const contactCard2 = document.createElement('div');
     contactCard2.classList.add('container-card');
@@ -51,6 +53,7 @@ const loadContactPage = function () {
     contactCard2.appendChild(contactCard2Header);
     contactCard2.appendChild(contactCard2Desc);
 
+
     const contactCard3 = document.createElement('div');
     contactCard3.classList.add('container-card');
 
@@ -69,6 +72,7 @@ const loadContactPage = function () {
     contactCard3.appendChild(contactCard3Header);
     contactCard3.appendChild(contactCard3Desc);
 
+
     const contactCard4 = document.createElement('div');
     contactCard4.classList.add('container-card');
 
@@ -86,6 +90,7 @@ const loadContactPage = function () {
     contactCard4.appendChild(contactCard4Image);
     contactCard4.appendChild(contactCard4Header);
     contactCard4.appendChild(contactCard4Desc);
+
 
     contactCardContainer.appendChild(contactCard1);
     contactCardContainer.appendChild(contactCard2);
